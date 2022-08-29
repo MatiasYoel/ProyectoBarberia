@@ -1,0 +1,387 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: sans-serif;
+	min-height: 100vh;
+	background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url(../assets/img/fondop.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+/*GRID INDEX*/
+.gridContenedorIndex{
+	display: grid;
+	grid-template-columns:50% 50%;
+	grid-template-rows: auto auto auto auto auto auto;
+	grid-template-areas:
+	"header header"
+	"imagenMenu imagenMenu"
+	"tituloBienvenida tituloBienvenida "
+	"texto imagen"
+	"imagenSec textoSec"
+	"footer footer";
+}
+header{
+	grid-area: header;
+	display: flex;
+	height: 65px;
+	background-color: #FFFF;
+	opacity: 0.8;
+	padding: 10px;
+	position: sticky;
+	top: 0;
+	margin-bottom: 50px padding: 20px;
+}
+.gridBienvenida{
+	grid-area: tituloBienvenida;
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 10px;
+}
+.gridTexto{
+	grid-area: texto;
+	margin-top: 50px;
+	margin-left: 40px;
+}
+.gridImagen{
+	grid-area: imagen;
+	margin-bottom: 30px;
+	margin-right: 20px;
+}
+.gridTextoSec{
+	grid-area: textoSec;
+	margin-top: 150px;
+	margin-left: 50px;
+	padding-left: 60px;
+}
+.gridImagenSec{
+	grid-area: imagenSec;
+	margin-left: 30px;
+	padding-bottom: 10px;
+}
+footer{
+	grid-area: footer;
+}
+.gridImagen img, .gridImagenSec img{width: 100%;}
+
+/*GRID NOSOTROS*/
+.gridContenedorNosotros{
+	display: grid;
+	grid-template-columns:50% 50%;
+	grid-template-rows: auto auto auto auto auto auto;
+	grid-template-areas:
+	"header header"
+	"bienvenidaNosotros bienvenidaNosotros"
+	"subTituloNosotros subTituloNosotros"
+	"imagenNosotros textoNosotros"
+	"barberoNosotros imagenBarberoNosotros"
+	"footer footer";
+}
+.bienvenidaNosotros{
+	grid-area: bienvenidaNosotros;
+	text-align: center;	
+	margin-bottom: 50px;
+	margin-top: 10px;
+}
+.subTituloNosotros{
+	grid-area: subTituloNosotros;
+	color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+.imagenNosotros{
+	grid-area: imagenNosotros;
+	margin-bottom: 30px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+.textoNosotros{
+	grid-area: textoNosotros;
+	margin-top: 30px;
+	margin-right: 30px;
+	margin-left: 20px;
+}
+.barberoNosotros{
+	grid-area: barberoNosotros;
+	margin-left: 30px;
+	margin-top: 50px;
+	
+}
+.imagenBarberoNosotros{
+	grid-area: imagenBarberoNosotros;
+	margin-right: 40px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.imagenNosotros img, .imagenBarberoNosotros img{width: 100%;}
+/*GRID SERVICIOS*/
+.gridContenedorServicios{
+	display: grid;
+	grid-template-columns:50% 50%;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas:
+	"header header"
+	"bienvenidaServicios bienvenidaServicios"
+	"listaServicios imagenServicios"
+	"footer footer";
+}
+.bienvenidaServicios{
+	grid-area: bienvenidaServicios;
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 10px;
+
+}
+.listaServicios{
+	grid-area: listaServicios;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+.imagenServicios{
+	grid-area: imagenServicios;
+	margin-top: 40px;
+}
+.imagenServicios img, table{
+	width: 100%;
+}
+/*GRID CONTACTO*/
+.gridContenedorContacto{
+	display: grid;
+	grid-template-columns:100%;
+	grid-template-rows: auto auto auto auto auto auto;
+	grid-template-areas:
+	"header"
+	"bienvenidaContacto"
+	"subTituloContacto"
+	"formulario"
+	"comoLlegarContacto"
+	"mapaContacto"
+	"footer";
+}
+.bienvenidaContacto{
+	grid-area: bienvenidaContacto;
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 10px;
+}
+.subTituloContacto{
+	grid-area: subTituloContacto;
+	margin-left: 30px;
+}
+.formulario{
+	grid-area: formulario;
+	margin-bottom: 30px;
+}
+.comoLlegarContacto{
+	grid-area: comoLlegarContacto;
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+.mapaContacto{
+	grid-area: mapaContacto;
+	margin-bottom: 20px;
+	width: 100%;
+text-align: center;
+}
+/*GRID GALERIA*/
+.gridContenedorGaleria{
+	display: grid;
+	grid-template-columns:33.3% 33.3% 33.4%;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-areas:
+	"header header header"
+	"bienvenidaGaleria bienvenidaGaleria bienvenidaGaleria"
+	"subTituloGaleria imagenGaleria textoGaleria"
+	"corte1 corte1 corte1"
+	"footer footer footer";
+}
+.bienvenidaGaleria{
+	grid-area: bienvenidaGaleria;
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 10px;
+}
+.subTituloGaleria{
+	grid-area: subTituloGaleria;
+	text-align: center;
+	margin-top: 100px;
+}
+.imagenGaleria{
+	grid-area: imagenGaleria;
+	text-align: center;
+}
+.textoGaleria{
+	grid-area: textoGaleria;
+	text-align: center;
+	margin-top: 20px;
+}
+.corte1{
+	grid-area: corte1;
+}
+.imagenGaleria img .corte1 img{width: 100%;}
+@media only screen and (max-width: 768px){
+		.gridContenedorIndex{
+		display: grid;
+		grid-template-areas:
+		"header"
+		"tituloBienvenida tituloBienvenida "
+		"imagen"
+		"texto"
+		"imagenSec"
+		"textoSec"
+		"footer";
+		grid-template-columns:100%;
+		grid-template-rows: auto auto auto auto auto auto auto;
+	}
+	
+}
+nav ul li{
+	display: inline;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+ul{
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+}
+nav{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	padding-left: 40px;
+	padding-top: 1px;
+
+}
+nav a{
+	font-weight: 400;
+	font-size: 2rem;
+	padding-right: 30px;
+}
+.bienvenida{
+	color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6rem;
+    font-weight: 100;
+    line-height: 1.2em;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+}
+
+.subTitulo{
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2em;
+}
+.subTituloMenor{
+	color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 100;
+    line-height: 1.2em;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+}
+p{
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 2.3rem;
+}
+.footer{
+	background-color: black;
+	text-align: center;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	
+}
+footer div p{
+	font-size: 1.5rem;
+
+}
+.subFooter{
+	font-size: 2.3rem;
+	color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    line-height: 1.7em;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+}
+.footer div img{
+	height: 30px;
+}
+
+.footer section img{
+	height: 150px;
+}
+form{
+	width: 450px;
+	margin: auto;
+	background: rgba(0, 0, 0, 0.4);
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+ input, textarea{
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+label, form div{
+	text-align: center;
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 2rem;
+}
+textarea{
+	min-height: 50px;
+	max-height: 250px;
+	max-width: 100%;
+}
+.boton{
+	background: black;
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 2rem;
+}
+table{
+	margin: left;
+	width: 600px;
+	height: 500px;
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+	border: none;
+}
+th{
+
+	text-align: center;
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 3rem;
+	border: none;
+}
+td{
+	text-align: center;
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 2.5rem;
+	border: none;
+	padding: 5px;
+}
