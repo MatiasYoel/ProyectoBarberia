@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<title>Somos Caballeros Barberia</title>
 </head>
@@ -35,7 +36,7 @@
 				</ul>
 			</nav>
 		</header>
-		<div class="gridBienvenida">
+		<div class="gridBienvenida desaparecer">
 			<h1 class="bienvenida">SOMOS CABALLEROS</h1>
 			<h3 class="subTituloMenor" > Salon Masculino</h3>
 		</div>
@@ -45,7 +46,7 @@
 			<h3 class="subTituloMenor gridTexto">ESCÁPATE DE LA RUTINA</h3> 
 	        <p>Un lugar diseñado y pensado en ti, para recargar energías solo o conectar con comunidad y amigos</p>
 		</div>
-		<div class="gridImagen">
+		<div class="gridImagen" data-aos="zoom-out">
 			<a href="#"><img src="assets/img/afeitado.jpg" alt="Afeitado Principal"></a>
 		</div>
 		<div class="gridTextoSec">
@@ -78,5 +79,9 @@
 			</div>
 		</footer>
 	</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
