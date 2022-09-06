@@ -545,21 +545,26 @@ td{
 	}
 	.formulario{
 		grid-area: formulario;
-		margin: 0px;
 	}
 	.comoLlegarContacto{
 		grid-area: comoLlegarContacto;
 		margin: 0px;
+		margin-bottom: 30px;
+		text-align: center;
 	}
 	.mapaContacto{
 		grid-area: mapaContacto;
-		margin: 0px;
-		width: 500px;
 	}
-	.mapaContacto .formulario{
-		width: 100%;
-		height: 100%;
+	form{
+		max-width: 100%;
+		height: auto;
 	}
+	iframe{
+		width: 350px;
+		height: auto;
+		padding: 10px;
+	}
+
 	/*GRID GALERIA*/
 	.gridContenedorGaleria{
 		display: grid;
