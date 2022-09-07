@@ -36,35 +36,22 @@ header{
 }
 .gridBienvenida{
 	grid-area: tituloBienvenida;
-	text-align: center;
-	margin-bottom: 50px;
-	margin-top: 10px;
-}
+	}
 .gridTexto{
 	grid-area: texto;
-	margin-top: 50px;
-	margin-left: 40px;
 }
 .gridImagen{
 	grid-area: imagen;
-	margin-bottom: 30px;
-	margin-right: 20px;
 }
 .gridTextoSec{
 	grid-area: textoSec;
-	margin-top: 150px;
-	margin-left: 50px;
-	padding-left: 60px;
 }
 .gridImagenSec{
 	grid-area: imagenSec;
-	margin-left: 30px;
-	padding-bottom: 10px;
 }
 footer{
 	grid-area: footer;
 }
-.gridImagen img, .gridImagenSec img{width: 100%;}
 
 /*GRID NOSOTROS*/
 .gridContenedorNosotros{
@@ -81,43 +68,21 @@ footer{
 }
 .bienvenidaNosotros{
 	grid-area: bienvenidaNosotros;
-	text-align: center;	
-	margin-bottom: 50px;
-	margin-top: 10px;
 }
 .subTituloNosotros{
 	grid-area: subTituloNosotros;
-	color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    font-weight: 100;
-    line-height: 1.2em;
-    margin-bottom: 20px;
-    margin-left: 60px;
 }
 .imagenNosotros{
 	grid-area: imagenNosotros;
-	margin-bottom: 30px;
-	margin-right: 20px;
-	margin-left: 20px;
 }
 .textoNosotros{
 	grid-area: textoNosotros;
-	margin-top: 30px;
-	margin-right: 30px;
-	margin-left: 20px;
 }
 .barberoNosotros{
-	grid-area: barberoNosotros;
-	margin-left: 30px;
-	margin-top: 50px;
-	
+	grid-area: barberoNosotros;	
 }
 .imagenBarberoNosotros{
 	grid-area: imagenBarberoNosotros;
-	margin-right: 40px;
-	margin-top: 20px;
-	margin-bottom: 30px;
 }
 .imagenNosotros img, .imagenBarberoNosotros img{width: 100%;}
 /*GRID SERVICIOS*/
@@ -133,22 +98,12 @@ footer{
 }
 .bienvenidaServicios{
 	grid-area: bienvenidaServicios;
-	text-align: center;
-	margin-bottom: 50px;
-	margin-top: 10px;
-
 }
 .listaServicios{
 	grid-area: listaServicios;
-	margin-left: 20px;
-	margin-bottom: 20px;
 }
 .imagenServicios{
 	grid-area: imagenServicios;
-	margin-top: 40px;
-}
-.imagenServicios img, table{
-	width: 100%;
 }
 /*GRID CONTACTO*/
 .gridContenedorContacto{
@@ -166,28 +121,18 @@ footer{
 }
 .bienvenidaContacto{
 	grid-area: bienvenidaContacto;
-	text-align: center;
-	margin-bottom: 50px;
-	margin-top: 10px;
 }
 .subTituloContacto{
 	grid-area: subTituloContacto;
-	margin-left: 30px;
 }
 .formulario{
 	grid-area: formulario;
-	margin-bottom: 30px;
 }
 .comoLlegarContacto{
 	grid-area: comoLlegarContacto;
-	margin-left: 30px;
-	margin-bottom: 20px;
 }
 .mapaContacto{
 	grid-area: mapaContacto;
-	margin-bottom: 20px;
-	width: 100%;
-text-align: center;
 }
 /*GRID GALERIA*/
 .gridContenedorGaleria{
@@ -203,28 +148,19 @@ text-align: center;
 }
 .bienvenidaGaleria{
 	grid-area: bienvenidaGaleria;
-	text-align: center;
-	margin-bottom: 50px;
-	margin-top: 10px;
 }
 .subTituloGaleria{
 	grid-area: subTituloGaleria;
-	text-align: center;
-	margin-top: 100px;
 }
 .imagenGaleria{
 	grid-area: imagenGaleria;
-	text-align: center;
 }
 .textoGaleria{
 	grid-area: textoGaleria;
-	text-align: center;
-	margin-top: 20px;
 }
 .corte1{
 	grid-area: corte1;
 }
-.imagenGaleria img .corte1 img{max-width: 100%; height: auto;}
 nav ul li{
 	display: inline;
 }
@@ -435,6 +371,7 @@ td{
 		margin: 0px;
 		padding: 10px;
 	}
+	.gridImagen img, .gridImagenSec img{max-width: 100%;}
 /*GRID NOSOTROS*/
 	.gridContenedorNosotros{
 		display: grid;
@@ -457,6 +394,11 @@ td{
 		margin-top: 10px;
 	}
 	.subTituloNosotros{
+		color: #ffffff;
+	    font-family: 'Montserrat', sans-serif;
+	    font-size: 2rem;
+	    font-weight: 100;
+	    line-height: 1.2em;
 		margin: 0px;
 	    margin-bottom: 30px;
 	    text-align: center;
@@ -597,6 +539,7 @@ td{
 		margin: 0px;
 		padding: 10px;
 		margin-bottom: 20px;
+		text-align: center;
 	}
 	.textoGaleria{
 		grid-area: textoGaleria;
@@ -611,6 +554,122 @@ td{
 		padding: 10px;
 		margin-left: 30px;
 		margin-bottom: 20px;
+	}
+	.imagenGaleria img .corte1 img{max-width: 100%; height: auto;}
+}
+@media only screen and (min-width: 1024px){
+	.gridBienvenida{
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 10px;
+	}
+	.gridTexto{
+	margin-top: 50px;
+	margin-left: 40px;
+	}
+	.gridImagen{
+		margin-bottom: 30px;
+		margin-right: 20px;
+	}
+	.gridTextoSec{
+		margin-top: 150px;
+		margin-left: 50px;
+		padding-left: 60px;
+	}
+	.gridImagenSec{
+		margin-left: 30px;
+		padding-bottom: 10px;
+	}
+	.gridImagen img, .gridImagenSec img{max-width: 100%;}
+	.bienvenidaNosotros{
+	grid-area: bienvenidaNosotros;
+	text-align: center;	
+	margin-bottom: 50px;
+	margin-top: 10px;
+	}
+	.subTituloNosotros{
+		color: #ffffff;
+	    font-family: 'Montserrat', sans-serif;
+	    font-size: 2rem;
+	    font-weight: 100;
+	    line-height: 1.2em;
+	    margin-bottom: 20px;
+	    margin-left: 60px;
+	}
+	.imagenNosotros{
+		margin-bottom: 30px;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	.textoNosotros{
+		margin-top: 30px;
+		margin-right: 30px;
+		margin-left: 20px;
+	}
+	.barberoNosotros{
+		margin-left: 30px;
+		margin-top: 50px;
+		
+	}
+	.imagenBarberoNosotros{
+		margin-right: 40px;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	.imagenNosotros img, .imagenBarberoNosotros img{width: 100%;}
+	.bienvenidaServicios{
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 10px;
+	}
+	.listaServicios{
+		margin-left: 20px;
+		margin-bottom: 20px;
+	}
+	.imagenServicios{
+		margin-top: 40px;
+	}
+	.imagenServicios img, table{
+		max-width: 100%;
+	}
+	.bienvenidaContacto{
+		text-align: center;
+		margin-bottom: 50px;
+		margin-top: 10px;
+	}
+	.subTituloContacto{
+		margin-left: 30px;
+	}
+	.formulario{
+		margin-bottom: 30px;
+	}
+	.comoLlegarContacto{
+		margin-left: 30px;
+		margin-bottom: 20px;
+	}
+	.mapaContacto{
+		margin-bottom: 20px;
+		width: 100%;
+	text-align: center;
+	}
+	.bienvenidaGaleria{
+		text-align: center;
+		margin-bottom: 50px;
+		margin-top: 10px;
+	}
+	.subTituloGaleria{
+		text-align: center;
+		margin-top: 100px;
+	}
+	.imagenGaleria{
+		text-align: center;
+	}
+	.textoGaleria{
+		text-align: center;
+		margin-top: 20px;
+	}
+	.corte1{
+		grid-area: corte1;
 	}
 	.imagenGaleria img .corte1 img{max-width: 100%; height: auto;}
 }
